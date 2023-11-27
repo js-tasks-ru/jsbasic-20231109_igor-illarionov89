@@ -1,3 +1,5 @@
 function namify(users) {
-  // ваш код...
+  let userNames = [];
+users.filter((users) => userNames.push(users.name)); 
+return userNames;
 }
