@@ -1,5 +1,5 @@
 function namify(users) {
   let userNames = [];
-users.filter((users) => userNames.push(users.name)); 
+users.map((users) => userNames.push(users.name)); 
 return userNames;
 }
