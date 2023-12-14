@@ -5,9 +5,11 @@ const THIRD_COLUMN = 3;
 function highlight(table) {
   const actions = {
     [THIRD_COLUMN]: (root, td) => {
-      if (td.dataset.available === 'true') {
+
+      if (td.  dataset.available==='true') {
         root.classList.toggle('available', true);
-      } else if (td.dataset.available === 'false') {
+      } else if (td.  dataset.available==='false') {
+
         root.classList.toggle('unavailable', true);
       } else if (!td.hasAttribute('data-available')) {
         root.hidden = true;
@@ -29,7 +31,7 @@ function highlight(table) {
     },
   };
 
-  for (const tr of table.rows) {
+  for (const tr  of table.rows) {
     Array.from(tr.cells).forEach((td, index) => {
       const fn = actions[index];
 
@@ -38,4 +40,5 @@ function highlight(table) {
       }
     });
   }
+  
 }
